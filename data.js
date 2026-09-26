@@ -1,0 +1,63 @@
+export const topics = [
+  "Engineering Mathematics","Process Calculations","Thermodynamics","Fluid Mechanics",
+  "Heat Transfer","Mass Transfer","Mechanical Operations","Chemical Reaction Engineering",
+  "Process Control","Plant Design","Chemical Technology"
+];
+
+export const questions = [
+  {id:1,year:2025,topic:"Mass Transfer",subtopic:"Distillation",type:"MCQ",marks:2,difficulty:"Medium",
+   question:"A binary mixture is separated by distillation. If relative volatility is constant and greater than unity, increasing reflux ratio generally causes the number of theoretical stages required for a specified separation to:",
+   options:["Increase","Decrease","Remain unchanged","Become zero"],correctAnswer:"Decrease",
+   explanation:"At higher reflux, the operating lines move closer to the equilibrium relationship, reducing the number of ideal stages needed for a fixed separation.",
+   formula:"Fenske / McCabe–Thiele relationships",concept:"Relative volatility and reflux ratio"},
+  {id:2,year:2024,topic:"Fluid Mechanics",subtopic:"Internal Flow",type:"NAT",marks:2,difficulty:"Easy",
+   question:"For fully developed laminar flow in a circular pipe, if the pipe radius is doubled while pressure gradient and fluid properties remain constant, the volumetric flow rate changes by a factor of ____.",
+   options:[],correctAnswer:"16",explanation:"Hagen–Poiseuille flow gives Q proportional to R^4 for a fixed pressure gradient.",formula:"Q = πR⁴(−ΔP/L)/(8μ)",concept:"Laminar pipe flow"},
+  {id:3,year:2023,topic:"Thermodynamics",subtopic:"First Law",type:"MCQ",marks:2,difficulty:"Easy",
+   question:"For a closed system undergoing a cyclic process, the net change in internal energy over one complete cycle is:",
+   options:["Positive","Negative","Zero","Equal to work input"],correctAnswer:"Zero",explanation:"Internal energy is a state function, so its net change over a cycle is zero.",formula:"ΔU_cycle = 0",concept:"State functions"},
+  {id:4,year:2022,topic:"Heat Transfer",subtopic:"Conduction",type:"MSQ",marks:2,difficulty:"Medium",
+   question:"Which statements about steady one-dimensional conduction through a plane wall are correct?",
+   options:["Temperature profile is linear when k is constant","Heat flux is constant when there is no generation","Thermal resistance increases with wall thickness","Heat flow is independent of area"],correctAnswer:["Temperature profile is linear when k is constant","Heat flux is constant when there is no generation","Thermal resistance increases with wall thickness"],explanation:"For constant thermal conductivity and no generation, the temperature profile is linear and heat flux is constant. Resistance is L/(kA), so it increases with thickness.",formula:"R_cond = L/(kA)",concept:"Plane-wall conduction"},
+  {id:5,year:2021,topic:"Chemical Reaction Engineering",subtopic:"CSTR",type:"MCQ",marks:2,difficulty:"Medium",
+   question:"For an isothermal first-order reaction in a CSTR, increasing the residence time while holding feed concentration fixed will generally make conversion:",
+   options:["Decrease","Increase","Remain fixed","Oscillate"],correctAnswer:"Increase",explanation:"For a first-order CSTR, X = kτ/(1+kτ), which increases monotonically with residence time.",formula:"X = kτ/(1+kτ)",concept:"CSTR design equation"},
+  {id:6,year:2025,topic:"Fluid Mechanics",subtopic:"Dimensionless Groups",type:"MCQ",marks:2,difficulty:"Easy",
+   question:"The Reynolds number represents the ratio of:",
+   options:["Inertial to viscous forces","Viscous to pressure forces","Gravity to surface-tension forces","Pressure to elastic forces"],correctAnswer:"Inertial to viscous forces",explanation:"Re = ρVD/μ compares inertial effects with viscous effects.",formula:"Re = ρVD/μ",concept:"Reynolds number"},
+  {id:7,year:2024,topic:"Mass Transfer",subtopic:"Absorption",type:"NAT",marks:2,difficulty:"Hard",
+   question:"A gas absorber has a height of 6 m and the overall gas-phase mass-transfer coefficient is such that the height of an overall gas transfer unit is 1.5 m. The number of overall gas transfer units is ____.",
+   options:[],correctAnswer:"4",explanation:"NTU = H / HOG = 6/1.5 = 4.",formula:"NTU_OG = H/H_OG",concept:"Packed-column design"},
+  {id:8,year:2023,topic:"Process Calculations",subtopic:"Material Balance",type:"MCQ",marks:2,difficulty:"Easy",
+   question:"In a steady-state process with no reaction and no accumulation, the total mass entering a control volume is:",
+   options:["Greater than mass leaving","Less than mass leaving","Equal to mass leaving","Always zero"],correctAnswer:"Equal to mass leaving",explanation:"The steady-state overall mass balance has zero accumulation, so input equals output.",formula:"Σṁ_in = Σṁ_out",concept:"Steady-state balance"},
+  {id:9,year:2022,topic:"Process Control",subtopic:"Feedback",type:"MCQ",marks:2,difficulty:"Medium",
+   question:"Negative feedback in a control loop primarily acts to:",
+   options:["Amplify disturbances","Reduce the effect of disturbances","Eliminate measurement","Increase process dead time"],correctAnswer:"Reduce the effect of disturbances",explanation:"Negative feedback compares measured output with the set point and adjusts the manipulated variable to reduce deviation.",formula:"e(t) = r(t) − y(t)",concept:"Feedback control"},
+  {id:10,year:2021,topic:"Mechanical Operations",subtopic:"Particle Size",type:"MSQ",marks:2,difficulty:"Medium",
+   question:"Which operations can be used for particle size classification or separation?",
+   options:["Screening","Cyclone separation","Sedimentation","Distillation"],correctAnswer:["Screening","Cyclone separation","Sedimentation"],explanation:"The first three are particle-separation/classification operations. Distillation separates components by volatility.",formula:"Stokes / terminal velocity relations",concept:"Particle separation"},
+  {id:11,year:2025,topic:"Thermodynamics",subtopic:"Phase Equilibrium",type:"MCQ",marks:2,difficulty:"Hard",
+   question:"For an ideal binary mixture at vapor–liquid equilibrium, Raoult's law relates the partial pressure of component i to:",
+   options:["Liquid mole fraction and saturation pressure","Vapor mole fraction and viscosity","Density and temperature only","Total pressure and heat capacity"],correctAnswer:"Liquid mole fraction and saturation pressure",explanation:"Raoult's law states p_i = x_i P_i^sat for an ideal liquid solution.",formula:"p_i = x_i P_i^sat",concept:"VLE"},
+  {id:12,year:2024,topic:"Heat Transfer",subtopic:"Heat Exchangers",type:"MCQ",marks:2,difficulty:"Medium",
+   question:"For the same terminal temperatures and heat-transfer area, a counter-current heat exchanger generally has a log-mean temperature difference that is:",
+   options:["Lower than parallel flow","Higher than parallel flow","Always zero","Independent of flow arrangement"],correctAnswer:"Higher than parallel flow",explanation:"Counter-current flow maintains a more favorable temperature driving force along the exchanger.",formula:"Q = UAΔT_lm",concept:"LMTD"},
+  {id:13,year:2023,topic:"Plant Design",subtopic:"Piping",type:"NAT",marks:2,difficulty:"Easy",
+   question:"If a pump delivers 20 L/s for 30 seconds, the volume delivered in litres is ____.",
+   options:[],correctAnswer:"600",explanation:"Volume = flow rate × time = 20 × 30 = 600 L.",formula:"V = Qt",concept:"Flow-rate conversion"},
+  {id:14,year:2022,topic:"Chemical Technology",subtopic:"Fertilizers",type:"MCQ",marks:2,difficulty:"Medium",
+   question:"The Haber process is primarily used industrially for the synthesis of:",
+   options:["Sulfuric acid","Ammonia","Methanol","Ethylene"],correctAnswer:"Ammonia",explanation:"The Haber–Bosch process synthesizes ammonia from nitrogen and hydrogen over a catalyst at elevated pressure and temperature.",formula:"N₂ + 3H₂ ⇌ 2NH₃",concept:"Ammonia synthesis"},
+  {id:15,year:2021,topic:"Engineering Mathematics",subtopic:"Differential Equations",type:"NAT",marks:2,difficulty:"Medium",
+   question:"The derivative of e^(3x) with respect to x is of the form k e^(3x). The value of k is ____.",
+   options:[],correctAnswer:"3",explanation:"By the chain rule, d(e^(3x))/dx = 3e^(3x).",formula:"d(e^(ax))/dx = ae^(ax)",concept:"Chain rule"}
+];
+
+export const tests = [
+  {id:"full",title:"GATE CH Full Mock",questions:65,duration:"180 Minutes",marks:100,kind:"Full mock"},
+  {id:"thermo",title:"Thermodynamics",questions:25,duration:"45 Minutes",marks:40,kind:"Subject test"},
+  {id:"fluid",title:"Fluid Mechanics",questions:25,duration:"45 Minutes",marks:40,kind:"Subject test"},
+  {id:"mass",title:"Mass Transfer",questions:25,duration:"45 Minutes",marks:40,kind:"Subject test"},
+  {id:"heat",title:"Heat Transfer",questions:25,duration:"45 Minutes",marks:40,kind:"Subject test"}
+];
